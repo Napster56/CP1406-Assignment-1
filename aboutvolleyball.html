@@ -3,12 +3,39 @@
 <head>
     <meta charset="utf-8">
     <title>Slammers Beach Volleyball - About Volleyball</title>
-    <link href="mainstyle.css" rel="stylesheet" type="text/css"/>    
+    <link href="mainstyle.css" rel="stylesheet" type="text/css"/>
+    <style> 
+        input[type=text] {
+            width: 130px;
+            margin-top: 40px;
+            margin-right: 40px;
+            box-sizing:content-box;
+            border: 2px solid white;
+            border-radius: 6px;
+            float: right;                   
+            color: #344D90; 
+            font-size: 14px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 40px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 40%;
+        }
+    </style>
 </head>
 <body class="container">        
     <div class="header">
-        <h1><a href="index.html">  
-            <img src= "images/vector_volleyball.jpg" width="" height="" alt="Go to home"/></a>Slammers Beach Volleyball - Fitness & Fun All in One</h1>
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+            <a href="index.html">  
+            <img src= "images/vector_volleyball.jpg" width="" height="" alt="Go to home"/></a>
+        <h1>Slammers Beach Volleyball - Fitness & Fun, All in One</h1>
         <nav class="nav">
             <a href="index.html">Home</a> |
 			<a href="joinus.html">Join Us</a> |
@@ -16,7 +43,7 @@
         </nav>
     </div>    
     <div id="sand">        
-        <h2>A Team Sport</h2>
+        <h2>If You Enjoy Team Sports- Play Volleyball</h2>
         <img src= "images/spike.jpg" class="homepage" width="686" height="480" alt="Spiking in a men's game"/>
             <p>Volleyball is a team sport played by two teams on a playing court divided by a net.</p> 
         <h4>Background</h4>
