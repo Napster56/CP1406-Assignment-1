@@ -4,12 +4,37 @@
 	<title>Slammers Beach Volleyball - Home</title>
 	<meta charset="utf-8">
 	<link href="mainstyle.css" rel="stylesheet" type="text/css"/>
+    <style> 
+        input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid white;
+            border-radius: 6px;
+            float: right;                
+            color: #344D90; 
+            font-size: 14px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 40px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 100%;
+        }
+    </style>
 </head>
 <body class="container">
     <div class="header">
-        <h1><a href="index.html">  
+        <h1>
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+            <a href="index.html">  
             <img src= "images/vector_volleyball.jpg" width="" height="" alt="Go to home"/></a>Slammers Beach Volleyball - Fitness & Fun All in One</h1>        
-    	<nav class="nav">
+        <nav class="nav">
             <a href="index.html">Home</a> |
             <a href="joinus.html">Join Us</a> |
 			<a href="aboutvolleyball.html">About Volleyball</a>
