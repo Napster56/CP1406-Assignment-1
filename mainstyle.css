@@ -24,7 +24,7 @@ body {
 nav {
     padding: 2em 2em;                                       /* padding of 2em top & bottom and 2em left & right */
     color: #344D90;
-    background: #FFB745;    
+    background: #FFB745;
     text-align: right;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -37,7 +37,7 @@ nav ul li {
 }
 nav a {
     color: #344D90;
-    background: #FFB745;
+    background: white;
     text-decoration: none;
     padding: 5px;
     width: 30em;
@@ -52,39 +52,17 @@ nav a:focus {
     color: black
 }
 nav a:hover {
-    color: white;
+    color: #344D90;
 }
 nav a:active {
     color: deepskyblue
-}
-/* link pseudo class selectors
-These are written in the following order:
-a:link
-a:visited
-a:focus
-a:hover
-a:active    
-*/
-a:link {
-                                                        /* looks for any "a' element that is a 'link' i.e. href values */
-}
-a:visited {                                             /* looks for any "a' element that has been clicked on by the user */
-     
-}
-a:focus {                                               /* styles any element in focus i.e. user has tabbed to that element; important for keyboard users!!! */
-   
-}
-a:hover {                                               /* styles any element that user has rolled over with mouse */
-    
-}                                    
-a:active {                                              /* styles any element usually an 'a' element that has JUST been clicked on by the user */
-                                       
 }
 /* heading styles */
 h1 {
     display: inline-block;
     margin: 0;   
     font-size: 3em;
+    font-family: lato, arial, helvetica, sans-serif;
     text-align: center;
     color: #344D90;
     background: #FFB745;
@@ -96,8 +74,11 @@ h1 {
     border-bottom-right-radius: 0;
 }
 h2 {
+    display: inline-block;
     font-size: 3em;
+    font-family: lato, arial, helvetica, sans-serif;
     text-align: center;
+    align-items: center;
     color: #344D90;
 	background: #E7552C;
     font-weight: bold;
@@ -108,6 +89,7 @@ h2 {
 }
 h3 {
     font-size: 2em;
+    font-family: lato, arial, helvetica, sans-serif;
     text-align: center;
     color: #FFB745;
     background: #344D90;
@@ -118,6 +100,7 @@ h3 {
 }
 h4 {
 	font-size: 1.5em;
+    font-family: lato, arial, helvetica, sans-serif;
     text-align: center;
     color: #344D90;
 	background: #E7552C;
@@ -128,27 +111,27 @@ h4 {
 }
 /* unordered list styles */
 ul {
-    border: 3px solid;
+    border: 6px solid;
     color: #333A56;
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
-    line-height: 2em;
+    line-height: 1.5em;
     padding: 40px;
     }
 /* paragraph styles */
 p {
-   display: block;
-   align-items: center;
-   line-height: 1em;
-   font-size: 1.25em;
-   color: #333A56;
-   background: #FFB745; 	
-   padding: 15px;
-   margin-left: auto;
+    display: block;
+    align-items: center;
+    line-height: 1em;
+    font-size: 1.25em;
+    font-family: lato, arial, helvetica, sans-serif;
+    color: #333A56;
+    background: #FFB745;
+    padding: 15px;
+    margin-left: auto;
     margin-right: auto;
-   border-radius: 6px;
-   	
-}
+    border-radius: 6px;
+   	}
 /* class selectors */           
 
 .container {
@@ -161,6 +144,7 @@ p {
 	font-size: 2em;
     color: #344D90;     
     text-align: center;
+    align-content: center;
 	border-radius: 8px;
     padding: 5px;
     margin-bottom: 2em;
@@ -172,12 +156,10 @@ p {
     border-radius: 8px;
     padding: 5px;
 }
-.imageHomepage {
-    display: block;
+.imageHeader {
+    width: 150px;
+    height: 100px;
     border-radius: 6px;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 .announcements {
     color: #344D90;
@@ -185,34 +167,118 @@ p {
     font-size: 200%;
     font-weight: 900;
     font-style: italic;
-    text-align: center;
-    line-height: 1.5em;
+    font-family: lato, arial, helvetica, sans-serif;
+    text-align: left;
+    line-height: 1em;
     padding: 20px;
     align-items: left;
+    margin-top: 1em;
     margin-bottom: 1em;
-    border-radius: 6px;
+    border-radius: 12px;
 }
-.sand {
-  border: none;
-  padding: 30px;
-  align-content: center;
-  background-image: url("images/sand.jpg");
-  border-radius: 8px;
+.imageAboutVolleyball {
+    display: inline-block;
+    align-content: center;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sandBackground {
+    display: block;
+    border: none;
+    padding: 30px;
+    text-align: center;
+    background-image: url("images/sand.jpg");
+    border-radius: 12px;
+    margin-bottom: 2em;
   }
+.imageHomepage {
+    display: inline-block;
+    width: 40%;
+    height: 40%;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.netBackground {
+    display: block;
+    border: 40px;
+    padding: 30px;
+    align-content: center;
+    background-image: url("images/beachNet.jpg");
+    border-radius: 12px;
+    margin-bottom: 2em;
+}
 .homepage {
-  max-width:360px;
-  max-height:240px;
-  border-radius: 8px;
-  margin-bottom: 2em;
+    font-size: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+form {
+    width:500px;
+    margin:50px auto;
+    float: right;
+}
+.search {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+.button {
+
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #207cca;
+    background-color:#207cca;
+    color:#fafafa;
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #5CC5EF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #344D90;
+}
+.form {
+    margin-bottom: 2em;
+    color: #E7552C;
+    background: #E7552C;
+    text-align: left;
+    border-radius: 8px;
+    padding: 5px;
+    width: 40%;'
 }
 .button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
     color: #5CC5EF;
     background-color: #E7552C;
     border: 4px solid white;
-    padding: 15px 32px;
+    padding: 16px 32px;
     text-align: center;
     align-items: center;
     text-decoration: none;
@@ -258,10 +324,9 @@ img {
 #footer {
     color: #344D90;
     background: #FFB745;
-    font-size: 1em;
+    font-size: 0.6em;
     text-align: center;
-    align-items: center;   
-    padding: 0.5px;
+    align-items: center;
     border-radius: 6px;
 }
 
