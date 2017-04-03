@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<< HEAD
 
 @charset "utf-8";
 /* CSS Document for Training Zone */                                                       /* Inherited properties (main ones): color
@@ -16,21 +16,21 @@ body {
     margin: 0;
     padding: 0;                                             /* ALWAYS set the font-size & font-family in body first!!!!! */
     font-family: lato, arial, helvetica, sans-serif;               /* font-size & font-family are inherited by ALL descendents */
-    font-size: 90%; 
-    background-image: url("images/sand.jpg");    
-    background-color: #cccccc;                              /* This is more efficient than repeating font-size & font-family */    
+    font-size: 90%;
+    /* This is more efficient than repeating font-size & font-family */
+    background: #cccccc url("images/sand.jpg");
+    width: 1152px;
+    height: 864px;
 }                                                           /* for all descendents; BUT this can be overidden for any element by
 /* nav styles */                                            /* specifying a different font-size & font-family for that element */ 
 nav {
     padding: 2em 2em;                                       /* padding of 2em top & bottom and 2em left & right */
     color: #344D90;
     background: #FFB745;
+    font-family: lato, arial, helvetica, sans-serif;
     text-align: right;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    }
+    border-radius: 0 0 12px 12px;
+}
 nav ul li {
     display:inline;
     margin-right: 5em;
@@ -88,15 +88,15 @@ h2 {
     border-radius: 6px;
 }
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: lato, arial, helvetica, sans-serif;
-    text-align: center;
-    color: #FFB745;
-    background: #344D90;
+    text-align: left;
+    color:#344D90;
+    background: #FFB745;
     font-weight: bold;
-    width: 60%;
+    width: 100%;
     padding: 5px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 h4 {
 	font-size: 1.5em;
@@ -111,12 +111,12 @@ h4 {
 }
 /* unordered list styles */
 ul {
-    border: 6px solid;
-    color: #333A56;
+    border: 4px #344D90 solid;
+    padding: 30px;
+    color: #344D90;
     font-weight: 800;
     font-style: italic;
     line-height: 1.5em;
-    padding: 40px;
     }
 /* paragraph styles */
 p {
@@ -125,13 +125,63 @@ p {
     line-height: 1em;
     font-size: 1.25em;
     font-family: lato, arial, helvetica, sans-serif;
-    color: #333A56;
+    color: #344D90;
     background: #FFB745;
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
    	}
+form.register {
+    display: block;
+    color: #344D90;
+    background: #FFB745;
+    font-family: lato, arial, helvetica, sans-serif;
+    margin-bottom: 2em;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
+    width: 48%;
+}
+form.register fieldset {
+    border: 4px #344D90 solid;
+    padding: 30px;
+}
+form.register legend {
+    font-weight: bold;
+    font-size: 2em;
+}
+form.register label {
+    font-size: 1.2em;
+    padding-right: 60px;
+}
+form.register label.fixedwidth {
+    display: block;
+    width: 240px;
+    float: left;
+}
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #344D90;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #5CC5EF;
+}
 /* class selectors */           
 
 .container {
@@ -139,7 +189,7 @@ p {
     margin-left: auto;          /* This centres the container in the viewport */
 	margin-right: auto; 
 }   
-.main {
+/*.main {
     display:inline-block;
 	font-size: 2em;
     color: #344D90;     
@@ -148,8 +198,9 @@ p {
 	border-radius: 8px;
     padding: 5px;
     margin-bottom: 2em;
-}
+}*/
 .header {
+    display: block;
     margin-bottom: 2em;    
     background: #FFB745; 
     text-align: left;
@@ -161,16 +212,16 @@ p {
     height: 100px;
     border-radius: 6px;
 }
-.announcements {
+.guidelineslist {
     color: #344D90;
     background: #FFB745;
-    font-size: 200%;
+    font-size: 1em;
     font-weight: 900;
     font-style: italic;
     font-family: lato, arial, helvetica, sans-serif;
     text-align: left;
     line-height: 1em;
-    padding: 20px;
+    padding: 30px;
     align-items: left;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -217,18 +268,12 @@ p {
     border-radius: 8px;
     margin-bottom: 2em;
 }
-form {
-    width:500px;
-    margin:50px auto;
-    float: right;
-}
 .search {
     padding:8px 15px;
     background:rgba(50, 50, 50, 0.2);
     border:0px solid #dbdbdb;
 }
 .button {
-
     padding:6px 15px;
     left:-8px;
     border:2px solid #207cca;
@@ -238,37 +283,6 @@ form {
 .button:hover  {
     background-color:#fafafa;
     color:#207cca;
-}
-input[type=text], select {
-    width: 40%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-input[type=submit] {
-    width: 100%;
-    background-color: #5CC5EF;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    background-color: #344D90;
-}
-.form {
-    margin-bottom: 2em;
-    color: #E7552C;
-    background: #E7552C;
-    text-align: left;
-    border-radius: 8px;
-    padding: 5px;
-    width: 40%;'
 }
 .button {
     display: block;
@@ -302,17 +316,19 @@ input[type=submit]:hover {
 }
 .contactlist {
     color: #344D90;
-    background: #E8E8E8;
-    font-size: 110%;
+    background: #FFB745;
+    font-family: lato, arial, helvetica, sans-serif;
+    font-size: 1.8em;
     font-weight: 900;
     font-style: italic;
+    float: right;
     text-align: left;
-    line-height: 2em;
-    padding: 10px;
-    width: 600px;
+    line-height: 2.5em;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    padding: 30px;
 }     
 img {
     margin: 0.5em;
@@ -321,6 +337,15 @@ img {
 
 }    
 /* id styles */
+#search {
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    color: #344D90;
+    font-family: lato, arial, helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold
+}
 #footer {
     color: #344D90;
     background: #FFB745;
