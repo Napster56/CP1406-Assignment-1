@@ -7,7 +7,7 @@ body {
     font-size: 90%;
     width: 1152px;
     height: 864px;
-    background-image: url("images/sand.jpg");
+    /* background-image: url("images/sand.jpg");*/
 }
 
 /* nav styles */
@@ -134,8 +134,7 @@ p {
     align-items: center;
     line-height: 1em;
     font-size: 1.25em;
-    color: #344D90;
-    background: #FFB745;
+    color: #344D90;    background: #FFB745;
     width: 75%;
     padding: 15px;
     margin-left: auto;
@@ -152,7 +151,7 @@ form.register {
     margin-right: auto;
     border-radius: 8px;
     padding: 10px;
-    width: 50%;
+    width: 75%;
 }
 
 form.register fieldset {
@@ -167,16 +166,15 @@ form.register legend {
 }
 
 form.register label {
-    font-size: 1.2em;
-    padding-right: 60px;
+    font-size: 1.5em;
+    padding-right: 40px;
 }
 
 form.register label.fixedwidth {
     display: block;
-    width: 240px;
+    width: 280px;
     float: left;
 }
-
 
 /* table styles */
 table {
@@ -188,14 +186,15 @@ table {
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
     border-collapse: collapse;
     border: 4px white solid;
-    border-radius: 8px;
 }
+
 th, td {
     border: 1px white solid;
     padding: 0.2em;
-} 
+}
 
 /* input styles */
 input[type=text], select {
@@ -233,7 +232,7 @@ input[type=submit]:hover {
 .header {
     display: block;
     margin-top: 2em;
-   margin-bottom: 2em;
+    margin-bottom: 2em;
     background: #FFB745;
     text-align: left;
     border-radius: 12px;
