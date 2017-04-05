@@ -1,47 +1,54 @@
 @charset "utf-8";
-/* CSS Document for Slammers Beach Volleyball website */                                                     
-body {                                                            
+/* CSS Document for Slammers Beach Volleyball website */
+body {
     margin: 0;
-    padding: 0;                                           
-    font-family: lato, arial, helvetica, sans-serif;       
-    font-size: 90%;    
+    padding: 0;
+    font-family: lato, arial, helvetica, sans-serif;
+    font-size: 90%;
     width: 1152px;
     height: 864px;
-	background-image: url("images/sand.jpg");
-}  
-/* nav styles */                                         
+    background-image: url("images/sand.jpg");
+}
+
+/* nav styles */
 nav {
-    padding: 1em 1em;
+    padding: 2em 2em; /* padding of 2em top & bottom and 2em left & right */
     color: #344D90;
-    background: #FFB745;
-	text-align: right;
+    text-align: right;
 }
+
 nav ul li {
-    width: 30em;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 4px;
-}
-nav a:visited {                                            
-    color: #E7552C;
-} 
-nav a:focus {
-    color: black
-    display:inline;
+    display: inline;
     margin-right: 5em;
 }
+
 nav a {
     color: #344D90;
     background: white;
     text-decoration: none;
     padding: 5px;
+    width: 30em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
 }
+
+nav a:visited { /* looks for any "a' element that has been clicked on by the user */
+    color: #00c4cc;
+}
+
+nav a:focus {
+    color: black
+}
+
 nav a:hover {
-    color: #344D90;
+    color: blue;
 }
+
 nav a:active {
     color: deepskyblue
 }
+
 /* heading styles */
 h1 {
     border: 0;
@@ -50,112 +57,126 @@ h1 {
     color: #344D90;
     font-weight: bold;
 }
+
 h2 {
     display: inline-block;
     font-size: 3em;
-	text-align: center;
-	align-items: center;
+    text-align: center;
+    align-items: center;
     color: #344D90;
-	background: #E7552C;
+    background: #E7552C;
     font-weight: bold;
     border: 4px white;
-	width: 75%;
+    width: 75%;
     padding: 5px;
     border-radius: 8px;
 }
+
 h3 {
-    font-size: 2.5em;    
+    font-size: 2.5em;
     text-align: left;
-    color:#344D90;
+    color: #344D90;
     background: #FFB745;
     font-weight: bold;
     width: 100%;
     padding: 5px;
     border-radius: 8px;
 }
+
 h4 {
-	font-size: 1.5em;    
+    font-size: 1.5em;
     text-align: center;
     float: inherit;
     color: #344D90;
-	background: #E7552C;
-	width: 25%;
-	padding: 10px;
+    background: #E7552C;
+    width: 25%;
+    padding: 10px;
     margin: 20px;
-	border-radius: 8px;
-}
-h5 {
-	font-size: 1.5em;
-	text-align: center;
-	width: 40%;
-    color: #5CC5EF;
-	background: #E7552C;
-	padding: 10px;
-    margin: 10px;
-	border-radius: 8px;
-}
-h6 {
-	font-size: 2em;
-	text-align: center;
-	width: 80%;
-	background: #E7552C;
-	padding: 10px;
-    margin: 20px;
-	border-radius: 6px;
+    border-radius: 8px;
 }
 
+h5 {
+    font-size: 1.5em;
+    text-align: center;
+    width: 40%;
+    color: #5CC5EF;
+    background: #E7552C;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+h6 {
+    font-size: 2em;
+    text-align: center;
+    width: 80%;
+    background: #E7552C;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+}
 
 /* unordered list styles */
 ul {
-    border: 4px white solid;
-    padding: 30px;
+    border: 4px #344D90 solid;
+    padding: 40px;
     color: #344D90;
-    font-weight: 800;
+    font-size: 1.5em;
+    font-weight: 700;
     font-style: italic;
     line-height: 1.5em;
-    }
+    border-radius: 8px;
+}
+
 /* paragraph styles */
 p {
     display: block;
     align-items: center;
     line-height: 1em;
-    font-size: 1.25em;    
+    font-size: 1.25em;
     color: #344D90;
     background: #FFB745;
-	width: 75%;
+    width: 75%;
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
-   	}
+}
+
 /* form styles */
 form.register {
-    display: block;
     color: #344D90;
-    background: #FFB745;   
+    background: #FFB745;
     margin-bottom: 2em;
-    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
     padding: 10px;
-    width: 48%;
+    width: 50%;
 }
+
 form.register fieldset {
     border: 4px #344D90 solid;
     padding: 30px;
+    border-radius: 8px;
 }
+
 form.register legend {
     font-weight: bold;
     font-size: 2em;
 }
+
 form.register label {
     font-size: 1.2em;
     padding-right: 60px;
 }
+
 form.register label.fixedwidth {
     display: block;
     width: 240px;
     float: left;
 }
+
 /* input styles */
 input[type=text], select {
     width: 40%;
@@ -166,6 +187,7 @@ input[type=text], select {
     border-radius: 8px;
     box-sizing: border-box;
 }
+
 input[type=submit] {
     width: 100%;
     background-color: #344D90;
@@ -176,48 +198,55 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 input[type=submit]:hover {
     background-color: #5CC5EF;
 }
-/* class selectors */         
+
+/* class selectors */
 .container {
     width: 100em;
-    margin-left: auto;          
-	margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .header {
     display: block;
-    margin-bottom: 2em;    
-    background: #FFB745; 
+    margin-bottom: 2em;
+    background: #FFB745;
     text-align: left;
     border-radius: 8px;
     padding: 5px;
 }
+
 .imageHeader {
     width: 150px;
     height: 100px;
     border-radius: 6px;
 }
+
 .guidelineslist {
     color: #344D90;
     background: #FFB745;
     font-size: 1em;
     font-weight: 900;
-    font-style: italic;    
+    font-style: italic;
     text-align: left;
     line-height: 1em;
     padding: 30px;
     align-items: left;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     border-radius: 12px;
 }
+
 .imageAboutVolleyball {
     text-align: center;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .sandbackground {
     display: block;
     border: none;
@@ -226,21 +255,24 @@ input[type=submit]:hover {
     background-image: url("images/sand.jpg");
     border-radius: 12px;
     margin-bottom: 2em;
-  }
+}
+
 .imageHomepage {
     display: inline-block;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
 }
-.netbackground {    
+
+.netbackground {
     border: 40px;
     padding: 30px;
-	text-align: center;
+    text-align: center;
     background-image: url("images/beachNet.jpg");
     border-radius: 12px;
     margin-bottom: 2em;
 }
+
 .homepage {
     font-size: 2.5em;
     margin-left: auto;
@@ -250,22 +282,26 @@ input[type=submit]:hover {
     border-radius: 8px;
     margin-bottom: 2em;
 }
+
 .search {
-    padding:8px 15px;
-    background:rgba(50, 50, 50, 0.2);
-    border:0 solid #dbdbdb;
+    padding: 8px 15px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 0 solid #dbdbdb;
 }
+
 .button {
-    padding:6px 15px;
-    left:-8px;
-    border:2px solid #207cca;
-    background-color:#207cca;
-    color:#fafafa;
+    padding: 6px 15px;
+    left: -8px;
+    border: 2px solid #207cca;
+    background-color: #207cca;
+    color: #fafafa;
 }
-.button:hover  {
-    background-color:#fafafa;
-    color:#207cca;
+
+.button:hover {
+    background-color: #fafafa;
+    color: #207cca;
 }
+
 .button {
     display: block;
     margin-left: auto;
@@ -283,19 +319,23 @@ input[type=submit]:hover {
     width: 600px;
     border-radius: 12px;
 }
+
 .button {
-    -webkit-transition-duration: 0.4s; 
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
+
 .button:hover {
-    background-color: white; 
+    background-color: white;
     color: #333A56;
 }
+
 .button:active {
-  background-color: steelblue;
-  box-shadow: 0 5px #666;
-  transform: translateY(8px);
+    background-color: steelblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(8px);
 }
+
 .aboutpagelist {
     color: #344D90;
     background: #FFB745;
@@ -311,12 +351,13 @@ input[type=submit]:hover {
     padding: 20px 40px;
     margin-bottom: 1em;
 }
-.homepagelist {	
+
+.homepagelist {
     color: #344D90;
-    background: #FFB745;    
+    background: #FFB745;
     font-size: 1.5em;
     font-weight: 700;
-    font-style: italic;    
+    font-style: italic;
     text-align: left;
     line-height: 1.5em;
     width: 65%;
@@ -326,32 +367,35 @@ input[type=submit]:hover {
     padding: 20px 40px;
     margin-bottom: 1em;
 }
+
 .contactlist {
     color: #344D90;
-    background: #FFB745;    
-    font-size: 1.8em;
-    font-weight: 900;
+    background: #FFB745;
+    font-size: 1.5em;
+    font-weight: 700;
     font-style: italic;
     float: right;
     text-align: left;
-    line-height: 2.5em;
+    line-height: 1.5em;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
     padding: 10px;
-	margin-bottom: 2em;
-}   
+    margin-bottom: 2em;
+}
+
 /* id styles */
 #search {
-	position: absolute;
-	top: 20px;
-	right: 135px;
-	color: #344D90;	
-	font-size: 1em;
-	font-weight: bold;
-	width: 300px;
+    position: absolute;
+    top: 20px;
+    right: 135px;
+    color: #344D90;
+    font-size: 1em;
+    font-weight: bold;
+    width: 300px;
 }
+
 #footer {
     color: #344D90;
     background: #FFB745;
@@ -360,6 +404,7 @@ input[type=submit]:hover {
     align-items: center;
     border-radius: 6px;
 }
+
 /*#announcements {
 	color: #344D90;	
 	font-size: 1em;
@@ -371,5 +416,5 @@ img {
     margin: 0.5em;
     border-radius: 8px;
     align-content: center;
-	background: #FFB745;
+    background: #FFB745;
 }    
