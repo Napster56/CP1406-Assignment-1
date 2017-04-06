@@ -277,7 +277,10 @@ input[type=submit]:hover {
     text-align: left;
     line-height: 1em;
     padding: 30px;
+    width: 75%;
     align-items: left;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1em;
     margin-bottom: 2em;
     border-radius: 12px;
@@ -321,7 +324,7 @@ input[type=submit]:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border: 4px white;
+    border: 4px white solid;
     border-radius: 8px;
     margin-bottom: 2em;
 }
