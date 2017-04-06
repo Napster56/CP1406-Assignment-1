@@ -150,13 +150,12 @@ form.register {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-    padding: 10px;
+    padding: 30px;
     width: 75%;
 }
 
 form.register fieldset {
     border: 4px #344D90 solid;
-    padding: 30px;
     border-radius: 8px;
 }
 
@@ -166,8 +165,9 @@ form.register legend {
 }
 
 form.register label {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-right: 40px;
+    text-align: left;
 }
 
 form.register label.fixedwidth {
@@ -208,6 +208,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
+    font-size: 1em;
     width: 100%;
     background-color: #344D90;
     color: white;
@@ -243,6 +244,23 @@ input[type=submit]:hover {
     margin-top: 1em;
     width: 150px;
     height: 100px;
+
+}
+
+.links {
+    display: inline-block;
+    border: 4px #344D90 solid;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.5em;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin-bottom: 1em;
 
 }
 
